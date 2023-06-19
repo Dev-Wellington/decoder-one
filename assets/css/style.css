@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilo zero so vou comecar a estilizar quando ele ja estiver funvionadno*/
+body {
+  background-color: #0f102c;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #f6f6fa;
+}
+h2 > img {
+  margin-right: 5px;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  width: 45%;
+  height: 60px;
+  border-radius: 15px;
+}
+.btnEncoder {
+  border: #2d2d4f;
+  background-color: #2d2d4f;
+  color: #f6f6fa;
+}
+.btnEncoder:hover {
+  border: #2d2d4f;
+  background-color: #282849;
+  color: #f6f6fa;
+}
+.btnDecoder {
+  border: #434459;
+  background-color: #434459;
+  color: #f6f6fa;
+}
+.btnDecoder:hover {
+  border: #434459;
+  background-color: #282849;
+  color: #f6f6fa;
+}
+
+.btnCopiar {
+  border: #434459;
+  background-color: #434459;
+  color: #f6f6fa;
+  margin-top: 36px;
+}
+.btnCopiar:hover {
+  border: #434459;
+  background-color: #282849;
+  color: #f6f6fa;
+}
+.copiar {
+  text-align: center;
+
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: #2d2d4f;
+  text-decoration: none;
+}
+a:hover {
+  color: #f6f6fa;
+}
+h3 {
+  margin-top: 3%;
+  text-align: center;
+  color: #f6f6fa;
+  font-size: 17px;
+}
+textarea {
+  font-size: 25px;
+  padding: 25px;
+}
+textarea {
+  outline: none;
+  border-radius: 20px;
+}
+textarea{
+  background-color: #0f102c;
+  color: #f6f6fa;
+  border: 2px solid #434459;
+}
+textarea {
+  max-width: 450px;
+  max-height: 450px;
+}
+.left,
+.right {
+  width: 450px;
+  height: 450px;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1080px){
+main{
+  display: flex;
+  flex-direction: column;
+}  
+textarea{
+  margin-top: 15px;
+}
+}
+
+
+@media only screen and (max-width: 800px){
+  main{
+    display: flex;
+    flex-direction: column;
+  }  
+  textarea{
+    max-width:280px ;
+    max-height: 250px;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Decoder</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/logo.svg" alt="logo alura" class="logo-alura" />
+      <div class="contatos">
+        <a href="https://github.com/Dev-Wellington">
+          <img src="assets/img/github-logo.svg" alt="Meu Github " class="contatos" />
+        </a>
+        <a href="https://www.linkedin.com/in/wellington-ds-silva/">
+          <img src="assets/img/linkedin-logo.svg" alt="Meu linkedin" class="contatos" />
+        </a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <textarea
+          class="left"
+          name="encoder"
+          id="left-textarea"
+          cols="0"
+          rows="0"
+          placeholder="Digite seu texto"
+        ></textarea>
+
+        <h2>
+          <img src="assets/img/icone.png" alt="aviso" />Apenas letras minúsculas
+          e sem assento.
+        </h2>
+        <div class="button">
+          <button class="btnEncoder" onclick="btnEncoder()">
+            Criptografar
+          </button>
+          <button class="btnDecoder" onclick="btnDecoder()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="background-decoder">
+          <textarea
+            class="right"
+            name="decoder"
+            id="right-textarea"
+            cols="0"
+            rows="0"
+            readonly
+            placeholder="Seu texto aparecera aqui!"
+          ></textarea>
+        </div>
+        <div class="copiar">
+          <button class="btnCopiar" onclick="copy()">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>
+        &copy; Desenvolvido por
+        <a
+          href="https://www.linkedin.com/in/wellington-ds-silva/"
+          target="_blank"
+          >Wellington
+        </a>
+      </h3>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
